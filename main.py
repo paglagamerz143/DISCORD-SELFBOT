@@ -1,4 +1,3 @@
-
 # lalala my owned multipurpose selfbot.
 # If you want to use this, you need to set your token and prefix in the .env file
 # You also need to install the following libraries from the requirements.txt file:
@@ -18,16 +17,13 @@ import string
 
 dotenv.load_dotenv()
 
-# clietn and intents setup
+# client and intents setup
 intents = discord.Intents.default()
 intents.guilds = True
 intents.voice_states = True
 token = os.getenv('TOKEN')
 prefix = os.getenv('PREFIX')
-client = commands.Bot(command_prefix=prefix,
-    intents=intents,
-    self_bot=True,
-    )
+client = commands.Bot(command_prefix=prefix, intents=intents)  # Removed self_bot=True
 
 
 # checking bot events when the bot is ready
