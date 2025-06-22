@@ -21,7 +21,7 @@ A multipurpose Discord selfbot with moderation, utility, and fun commands.
 1. **Clone the repository:**
    ```sh
    git clone <your-repo-url>
-   cd "Voce host project"
+   cd "DISCORD-SELFBOT"
    ```
 
 2. **Install dependencies:**
